@@ -35,20 +35,7 @@
     <p>다음 페이지에서 보여드릴게요!</p>
   </div>
 
-  <h2><a href="{%url 'main:new'%}">글쓰기</a></h2>
-  
-  <h1>글 목록</h1>
-  <div>
-    {% for post in posts %} 
-    <div>
-      <h3>{{post.title}}</h3>
-      {{post.writer}}<br>
-      {{post.summary}}
-      <a href="{%url 'main:detail' post.id%}">...자세히</a>
-      <br>
-    </div>
-    {%endfor%}
-  </div>
+ 
 
 
 
